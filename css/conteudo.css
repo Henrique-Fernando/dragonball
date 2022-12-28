@@ -1,0 +1,68 @@
+.conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem 15rem;
+}
+
+.conteudo-texto{
+  align-self: center;
+  padding: 0 5rem;
+}
+.button-vegeta{
+  background-color: blueviolet;
+}
+.button-vegeta a{
+  color: black;
+}
+.button-vegeta:hover{
+  background-color: rgb(43, 148, 240);
+}
+.button-goku{
+  background-color: rgb(43, 148, 240);
+}
+.button-goku a{
+  color: white;
+}
+.button-goku:hover{
+background-color: blueviolet;
+
+}
+
+.esfera{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap:10px
+}
+.esfera h2{
+  position:relative;
+  bottom: 1.8rem;
+}
+
+@media(max-width:1300px){
+  .conteudo-texto{
+    padding: 0 1rem;
+  }
+}
+
+@media(max-width:1050px){
+  .conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .conteudo-texto{
+    display: grid;
+    align-items: center;
+  
+  }
+}
+@media(max-width:800px){
+  img{
+    display: none;
+  }
+  .conteudo{
+    margin: 1rem 3rem;
+  }
+  button{
+    padding: 1rem 2rem;
+  }
+}
